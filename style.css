@@ -173,7 +173,7 @@
     background: var(--main-color);
     box-shadow: 0 0 25px var(--main-color);
     border-radius: 4rem;
-    font-size: 1.6rem;
+    font-size: 2.0rem;
     color: black; 
     border: 2px solid transparent;
     letter-spacing: 0.1rem;
@@ -192,7 +192,7 @@
     gap: 1.5rem;
   }
   
-  .btn-group a:nth-of-type(2) {
+  .btnn-group a:nth-of-type(2) {
     background-color: black; 
     color: var(--main-color);
     border: 2px solid var(--main-color);
@@ -204,12 +204,54 @@
     background-color: var(--main-color);
     color: black;
   }
-  .text-animation {
-    font-size: 34px;
-    font-weight: 600;
-    min-width: 280px;
+  
+  .btnn-group .btnn {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: 500; 
+    border: 2px solid #00ffff; 
+    color: #000; 
+    background-color: transparent; 
+    border-radius: 25px; 
+    text-align: center;
+    text-decoration: none;
+    transition: all 0.3s ease;
   }
   
+  .btnn-group .btnn:hover {
+    background-color: #008b8b;
+    color: #fff;
+    box-shadow: 0 0 10px #00ffff;
+  }
+  .btnn-group-btnn {
+    background-color: #00ffff; 
+    color: #000;
+  }
+ .btnn-group a:first-child {
+background: transparent;
+color: var(--main-color);
+border: 2px solid var(--main-color);
+box-shadow: 0 0 10px var(--main-color);
+padding: 0.8rem 2.5rem;
+border-radius: 3rem;
+font-size: 1.8rem;
+font-weight: 600;
+transition: 0.3s ease;
+background-color: #00ffff;
+color: #000;
+}
+
+ .btnn-group a:first-child:hover {
+background: #008b8b;
+transform: scale(1.05);
+box-shadow: 0 0 25px var(--main-color);
+}
+.text-animation {
+  font-size: 34px;
+  font-weight: 600;
+  min-width: 280px;
+}
   .text-animation span {
     position: relative;
   }
@@ -505,25 +547,62 @@ top: 10px;
       .project-item p {
         font-size: 1.3rem;
       }
-      .visit-btn {
-        margin-top: 10px;
-        padding: 8px 16px;
-        background: #00f0ff;
-        color: black;
-        font-weight: bold;
-        border: none;
-        border-radius: 8px;
-        cursor: pointer;
-        box-shadow: 0 0 8px #00f0ff;
+      .btn-group {
+        display: flex;
+        gap: 1rem; /* spacing between buttons */
+        margin-top: 1.5rem;
+        justify-content: center; /* center-align */
+      }
+      
+      .btn-group .btn {
+        display: inline-block;
+        padding: 10px 20px;
+        font-size: 16px;
+        font-weight: 500; /* Adjust to make uniform */
+        border: 2px solid #00ffff; /* Same border color */
+        color: #000; /* Text color for filled button */
+        background-color: transparent; /* Transparent for Contact */
+        border-radius: 25px; /* Uniform border radius */
+        text-align: center;
+        text-decoration: none;
         transition: all 0.3s ease;
       }
       
-      .visit-btn:hover {
-        background: #00c7d0;
-        box-shadow: 0 0 15px #00eaff;
+      .btn-group .btn:hover {
+        background-color: #008b8b; /* Adjust hover effects */
+        color: #fff;
+        box-shadow: 0 0 10px #00ffff;
       }
-      
+      .btn-group-btn {
+        background-color: #00ffff; /* Fill background */
+        color: #000;
+      }
+           /* Updated Visit button style to match desired output */
+.project-item .btn-group a:first-child {
+  background: transparent;
+  color: var(--main-color);
+  border: 2px solid var(--main-color);
+  box-shadow: 0 0 10px var(--main-color);
+  padding: 0.8rem 2.5rem;
+  border-radius: 3rem;
+  font-size: 1.8rem;
+  font-weight: 600;
+  transition: 0.3s ease;
+  background-color: #00ffff;
+  color: #000;
+}
 
+.project-item .btn-group a:first-child:hover {
+  background: #008b8b;
+  transform: scale(1.05);
+  box-shadow: 0 0 25px var(--main-color);
+}
+.btn-group a:nth-of-type(2) {
+  background-color: black; 
+  color: var(--main-color);
+  border: 2px solid var(--main-color);
+  box-shadow: 0 0 25px transparent;
+}
       .contact {
         background-color: var(--bg-color);
       }
